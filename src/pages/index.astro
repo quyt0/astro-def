@@ -14,37 +14,35 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<div class="intro-wrapper">
+				<div class="left-intro">
+					<h2 class="intro-sub-heading">Giới thiệu</h2>
+					<h1 class="intro-heading">Trung tâm<br>Tiếng Trung Mộc Miên</h1>
+					<p class="intro-content-p">
+						Được thành lập vào năm 2014, Mộc Miên tự hào là trung tâm uy tín đã đồng hành cùng hơn 30.000 học viên chinh phục thành công chứng chỉ HSK.
+						<br>
+						Với lộ trình học tập tinh gọn, đội ngũ giáo viên chuyên môn cao, cùng giáo trình được biên soạn độc quyền bởi Founder - Thạc sĩ Nguyễn Thị A (HSK6), Mộc Miên đã giúp hàng chục nghìn học viên thành công trong bộ môn tiếng Trung, vươn đến mục tiêu thành thạo ngoại ngữ nhanh chóng, xuất khẩu lao động, ... ghi hết ra. 
+					</p>
+					<a href="/gioi-thieu" class="view-about-btn">Xem chi tiết</a>
+				</div>
+				<div class="right-intro">
+					<div class="teacher-info-wrapper">
+						<div class="teacher-info-icon">
+							<i class="fa-solid fa-chalkboard-user"></i>
+						</div>
+						<div class="teacher-info-text">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+							<p class="teacher-name">Cô giáo 老师</p>
+							<p>Người có quyền lực nhất trung tâm</p>
+						</div>
+					</div>
+					<img src="../../src/assets/img/co-giao.png" alt="" class="img-teacher">
+				</div>
+			</div>
 		</main>
 		<Footer />
 
@@ -65,5 +63,121 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			  }));
 			}
 		</script>
-	</body>
+
+		<style>
+			.intro-wrapper {
+				display: flex;
+				width: 100%;
+				position: relative;
+				border-radius: 18px;
+				overflow: hidden;
+				padding: 20px 0;
+			}
+			.left-intro {
+				width: 66.667%;
+				padding: 0 24px;
+			}
+			.left-intro::before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0.6;
+				background-image: url("data:image/svg+xml,%0A%3Csvg id='visual' viewBox='0 0 960 540' width='960' height='540' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'%3E%3Crect x='0' y='0' width='960' height='540' fill='%23ffffff'%3E%3C/rect%3E%3Cdefs%3E%3ClinearGradient id='grad1_0' x1='43.8%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad1_1' x1='43.8%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%23caaed1' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad1_2' x1='43.8%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%23ffffff' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%23caaed1' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad2_0' x1='0%25' y1='0%25' x2='56.3%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad2_1' x1='0%25' y1='0%25' x2='56.3%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%23caaed1' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad2_2' x1='0%25' y1='0%25' x2='56.3%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%23caaed1' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%23ffffff' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cg transform='translate(960, 0)'%3E%3Cpath style='opacity:0.5' d='M0 243C-28.2 229.1 -56.3 215.3 -84.2 203.3C-112.1 191.2 -139.6 181.1 -161.9 161.9C-184.2 142.8 -201.2 114.6 -207.9 86.1C-214.5 57.6 -210.8 28.8 -207 0L0 0Z' fill='%23e4d6e8'%3E%3C/path%3E%3Cpath d='M0 162C-18.8 152.8 -37.5 143.5 -56.1 135.5C-74.7 127.5 -93.1 120.7 -108 108C-122.8 95.2 -134.2 76.4 -138.6 57.4C-143 38.4 -140.5 19.2 -138 0L0 0Z' fill='%23af87ba'%3E%3C/path%3E%3Cpath d='M0 81C-9.4 76.4 -18.8 71.8 -28.1 67.8C-37.4 63.7 -46.5 60.4 -54 54C-61.4 47.6 -67.1 38.2 -69.3 28.7C-71.5 19.2 -70.3 9.6 -69 0L0 0Z' fill='%239461a3'%3E%3C/path%3E%3C/g%3E%3Cg transform='translate(0, 540)'%3E%3Cpath d='M0 -207C28.6 -212.3 57.1 -217.5 88.4 -213.4C119.7 -209.3 153.6 -195.8 171.8 -171.8C190 -147.9 192.4 -113.4 200.5 -83C208.5 -52.7 222.3 -26.3 236 0L0 0Z' fill='%23e4d6e8'%3E%3C/path%3E%3Cpath d='M0 -138C19 -141.5 38.1 -145 58.9 -142.3C79.8 -139.5 102.4 -130.5 114.6 -114.6C126.7 -98.6 128.3 -75.6 133.7 -55.4C139 -35.1 148.2 -17.6 157.3 0L0 0Z' fill='%23af87ba'%3E%3C/path%3E%3Cpath d='M0 -69C9.5 -70.8 19 -72.5 29.5 -71.1C39.9 -69.8 51.2 -65.3 57.3 -57.3C63.3 -49.3 64.1 -37.8 66.8 -27.7C69.5 -17.6 74.1 -8.8 78.7 0L0 0Z' fill='%239461a3'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-size: cover;
+				z-index: -1;
+			}
+			.intro-blob-1 {
+				position: absolute;
+			}
+
+			.intro-sub-heading {
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+
+			.intro-heading {
+				font-size: 36px;
+				text-transform: uppercase;
+			}
+
+			.intro-content-p {
+				text-align: justify;
+				width: 80%;
+			}
+
+			.view-about-btn {
+				display: block;
+				text-decoration: none;
+				height: 40px;
+				line-height: 40px;
+				background-color: var(--accent);
+				width: 120px;
+				text-align: center;
+				border-radius: 12px;
+				color: #fff;
+				margin: 32px 0 0 20px;
+			}
+
+			.right-intro {
+				width: 33.333%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+			}
+
+			.img-teacher {
+				width: 70%;
+			}
+
+			.teacher-info-wrapper {
+				width: 250px;
+				background-color: #fff;
+				position: absolute;
+				box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.16);
+				left: -20%;
+				bottom: 0;
+				padding: 0 24px;
+				border-radius: 10px;
+			}
+
+			.teacher-info-icon {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				bottom: 0;
+				display: block;
+				border-radius: 100%;
+				background-color: var(--accent);
+				width: 36px;
+				height: 36px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: white;
+			}
+
+			.teacher-info-text {
+				padding: 16px;
+			}
+
+			.teacher-info-text p{
+				margin: 0;
+			}
+
+			.teacher-info-text i {
+				color: #f7c04d;
+			}
+
+			.teacher-name {
+				color: var(--accent);
+			}
+		</style>
+	</body>	
 </html>
