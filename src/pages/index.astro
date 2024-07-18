@@ -2,7 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { Image } from 'astro:assets';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import TeacherImg from '../assets/img/co-giao.png';
 ---
 
 <!doctype html>
@@ -40,7 +42,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 							<p>Người có quyền lực nhất trung tâm</p>
 						</div>
 					</div>
-					<img src="../../src/assets/img/co-giao.png" alt="" class="img-teacher">
+					<Image class="img-teacher" src={TeacherImg} alt="Cô giáo Mộc Miên" />
 				</div>
 			</div>
 		</main>
