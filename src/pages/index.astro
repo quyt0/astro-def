@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import { Image } from 'astro:assets';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import TeacherImg from '../assets/img/co-giao.png';
+import Course1Img from '../assets/img/course-1.jpg';
 ---
 
 <!doctype html>
@@ -30,20 +31,220 @@ import TeacherImg from '../assets/img/co-giao.png';
 				<div class="right-intro">
 					<div class="teacher-info-wrapper">
 						<div class="teacher-info-icon">
-							<i class="fa-solid fa-chalkboard-user"></i>
+							<i class="fas fa-chalkboard-teacher"></i>
 						</div>
 						<div class="teacher-info-text">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-regular fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
 							<p class="teacher-name">Cô giáo 老师</p>
 							<p>Người có quyền lực nhất trung tâm</p>
 						</div>
 					</div>
-					<Image class="img-teacher" src={TeacherImg} alt="Cô giáo Mộc Miên" />
+					<Image class="img-teacher" src={TeacherImg} alt="Cô giáo ..." />
 				</div>
+			</div>
+
+			<div class="reason-wrapper">
+				<div class="reason-item reason-item-first row">
+					<div class="reason-item-head col-4">
+						<h4 class="reason-sub-heading main-page-h4-heading">Lý do bạn nên chọn</h4>
+						<h3 class="reason-heading main-page-h3-heading">Tiếng Trung <span style="color: var(--accent);">Mộc Miên</span></h3>
+					</div>
+					<p class="reason-intro-desc col-8 flex-center-v">
+						Với hơn 10 năm hình thành và phát triển, Anh ngữ Athena đã đồng hành cùng hơn 30.000 học viên chinh phục thành công chứng chỉ TOEIC,  IELTS từ con số 0 chỉ sau 1 khóa học duy nhất.
+					</p>
+				</div>
+				<div class="row">
+					<div class="reason-item col-3">
+						<div class="reason-item-head"><i class="far fa-graduation-cap"></i></div>
+						<p>
+							Đội ngũ giáo viên chuyên môn cao, dày dặn kinh nghiệm luyện thi thực tế
+						</p>
+					</div>
+					<div class="reason-item col-3">
+						<div class="reason-item-head"><i class="far fa-book"></i></div>
+						<p>
+							Lộ trình tinh gọn, không lan man, giúp học viên đạt mục tiêu về điểm số trong thời gian ngắn nhất.	
+						</p>
+					</div>
+					<div class="reason-item col-3">
+						<div class="reason-item-head"><i class="far fa-users-class"></i></div>
+						<p>
+							Giáo trình được thiết kế độc quyền bởi Thạc sĩ Đỗ Vân Anh - Founder Anh ngữ Athena (8.5 IELTS , 990 TOEIC)
+						</p>
+					</div>
+					<div class="reason-item col-3">
+						<div class="reason-item-head"><i class="far fa-tv"></i></div>
+						<p>
+							Học phí cạnh tranh nhất thị trường, hỗ trợ 50% lệ phí thi chứng chỉ cho học viên sau khóa học.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="courses-wrapper">
+				<div class="courses-header row">
+					<div class="courses-title col-4">
+						<h4 class="courses-title-sub-heading main-page-h4-heading">Các khoá học</h4>
+						<h3 class="courses-title-heading main-page-h3-heading">Tiếng Trung <span style="color: var(--accent);">Mộc Miên</span></h3>
+					</div>
+					<div class="courses-description col-8">
+						<p class="flex-center-v">
+							Với sự đa dạng hóa khóa học từ offline đến online, mỗi học viên sẽ 
+							có cơ hội trải nghiệm phương pháp học tiếng Anh độc đáo duy nhất tại Mộc Miên. 
+							Học viên sẽ dễ dàng tiếp nhận kiến thức mới nhờ phương pháp giảng dạy tinh gọn 
+							từ những giáo viên xuất sắc của trung tâm.
+						</p>
+					</div>
+				</div>
+				<ul class="courses-slide owl-carousel">
+					<li class="course-item">
+						<a href="" class="course-item-link">
+							<Image class="course-item-img" src={Course1Img} alt="" />
+						</a>
+							<div class="course-item-detail">
+								<span>Khoá học</span>
+								<a href="" class="course-item-title">Khám phá tiếng Trung</a>
+								<div class="separator"></div>
+								<div class="course-item-props">
+									<div>
+										<i class="far fa-user"></i>
+										<span>Giáo viên: Cô giáo Mộc Miên</span>
+									</div>
+									<div>
+										<i class="far fa-clock"></i>
+										<span>Thời lượng: 15 buổi</span>
+									</div>
+								</div>
+							</div>
+						<a class="course-item-view-btn" href="">Xem chi tiết</a>
+					</li>
+					<li class="course-item">
+						<a href="" class="course-item-link">
+							<Image class="course-item-img" src={Course1Img} alt="" />
+						</a>
+							<div class="course-item-detail">
+								<span>Khoá học</span>
+								<a href="" class="course-item-title">Phát âm rõ ràng như người bản xứ</a>
+								<div class="separator"></div>
+								<div class="course-item-props">
+									<div>
+										<i class="far fa-user"></i>
+										<span>Giáo viên: Cô giáo Mộc Miên</span>
+									</div>
+									<div>
+										<i class="far fa-clock"></i>
+										<span>Thời lượng: 15 buổi</span>
+									</div>
+								</div>
+							</div>
+						<a class="course-item-view-btn" href="">Xem chi tiết</a>
+					</li>
+					<li class="course-item">
+						<a href="" class="course-item-link">
+							<Image class="course-item-img" src={Course1Img} alt="" />
+						</a>
+							<div class="course-item-detail">
+								<span>Khoá học</span>
+								<a href="" class="course-item-title">Từ vựng căn bản</a>
+								<div class="separator"></div>
+								<div class="course-item-props">
+									<div>
+										<i class="far fa-user"></i>
+										<span>Giáo viên: Cô giáo Mộc Miên</span>
+									</div>
+									<div>
+										<i class="far fa-clock"></i>
+										<span>Thời lượng: 15 buổi</span>
+									</div>
+								</div>
+							</div>
+						<a class="course-item-view-btn" href="">Xem chi tiết</a>
+					</li>
+					<li class="course-item">
+						<a href="" class="course-item-link">
+							<Image class="course-item-img" src={Course1Img} alt="" />
+						</a>
+							<div class="course-item-detail">
+								<span>Khoá học</span>
+								<a href="" class="course-item-title">Những lỗi sai hay gặp khi bắt đầu học tiếng Trung</a>
+								<div class="separator"></div>
+								<div class="course-item-props">
+									<div>
+										<i class="far fa-user"></i>
+										<span>Giáo viên: Cô giáo Mộc Miên</span>
+									</div>
+									<div>
+										<i class="far fa-clock"></i>
+										<span>Thời lượng: 15 buổi</span>
+									</div>
+								</div>
+							</div>
+						<a class="course-item-view-btn" href="">Xem chi tiết</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="news-wrapper">
+				<div class="news-header row">
+					<div class="news-header-left col-4">
+						<h4 class="news-header-sub-heading main-page-h4-heading">
+							Tin tức và ưu đãi
+						</h4>
+						<h3 class="news-header-main-heading main-page-h3-heading">
+							Duy nhất tại <br> <span style="color: var(--accent);">Mộc Miên</span>
+						</h3>
+					</div>
+					<p class="news-description col-8 flex-center-v">
+					Mộc Miên cập nhật thường xuyên và liên tục những thông tin về kỳ thi HSK. Không chỉ đem lại tin tức, đây còn là nguồn tài liệu bổ ích về tiếng Trung đồng thời là nơi cung cấp thông tin về những ưu đãi khủng theo từng khóa học.
+					</p>
+				</div>
+				<div class="news-body row">
+					<div class="video-wrapper col-6">
+						<div class="back-bg"/>
+						<video controls>
+							<source src="../src/assets/img/video-news.mp4" type="video/mp4">
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="news-body-content col-6">
+						<h4 class="news-body-sub-heading main-page-h4-heading">Ưu đãi các khoá học HSK, giao tiếp</h4>
+						<h3 class="news-body-heading main-page-h3-heading">Ưu đãi ngút ngàn - học bổng ngập tràn</h3>
+						<ul class="news-body-list1">
+							<li>
+								Học phí cạnh tranh nhất thị trường
+							</li>
+							<li>	
+								Giảm ngay 300.000VNĐ khi like, share, check in post
+							</li>
+							<li>
+								Giảm thêm 300.000VNĐ khi đăng ký theo nhóm
+							</li>
+							<li>
+								Tặng ngay 50% lệ phí thi chứng chỉ sau khi hoàn thành khóa học
+							</li>
+						</ul>
+						<h4 class="main-page-h4-heading">Chinh phục HSK cùng <span style="color: var(--accent);">Mộc Miên</span>, tại sao không?</h3>
+						<ul class="news-body-list1">
+							<li>
+								Lộ trình tinh gọn chỉ với 01 khóa học duy nhất, phù hợp cho sinh viên, những bạn mất gốc và các bạn mới ra trường.
+							</li>
+							<li>	
+								Đội ngũ giáo viên chuyên môn cao, dày dặn kinh nghiệm luyện thi thực tế.
+							</li>
+							<li>
+								Tài liệu được biên soạn độc quyền bởi Thạc sĩ Đỗ Vân Anh - Founder Anh ngữ Athena (IELTS 8.5, TOEIC 990/990).
+							</li>
+							<li>
+								Cam kết đầu ra bằng hợp đồng, miễn phí học lại nếu không đạt mục tiêu.
+							</li>
+						</ul>
+					</div>
+				</div>
+
 			</div>
 		</main>
 		<Footer />
@@ -65,121 +266,5 @@ import TeacherImg from '../assets/img/co-giao.png';
 			  }));
 			}
 		</script>
-
-		<style>
-			.intro-wrapper {
-				display: flex;
-				width: 100%;
-				position: relative;
-				border-radius: 18px;
-				overflow: hidden;
-				padding: 20px 0;
-			}
-			.left-intro {
-				width: 66.667%;
-				padding: 0 24px;
-			}
-			.left-intro::before {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				opacity: 0.6;
-				background-image: url("data:image/svg+xml,%0A%3Csvg id='visual' viewBox='0 0 960 540' width='960' height='540' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'%3E%3Crect x='0' y='0' width='960' height='540' fill='%23ffffff'%3E%3C/rect%3E%3Cdefs%3E%3ClinearGradient id='grad1_0' x1='43.8%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad1_1' x1='43.8%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%23caaed1' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad1_2' x1='43.8%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%23ffffff' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%23caaed1' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad2_0' x1='0%25' y1='0%25' x2='56.3%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad2_1' x1='0%25' y1='0%25' x2='56.3%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%23caaed1' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%239461a3' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cdefs%3E%3ClinearGradient id='grad2_2' x1='0%25' y1='0%25' x2='56.3%25' y2='100%25'%3E%3Cstop offset='14.444444444444446%25' stop-color='%23caaed1' stop-opacity='1'%3E%3C/stop%3E%3Cstop offset='85.55555555555554%25' stop-color='%23ffffff' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cg transform='translate(960, 0)'%3E%3Cpath style='opacity:0.5' d='M0 243C-28.2 229.1 -56.3 215.3 -84.2 203.3C-112.1 191.2 -139.6 181.1 -161.9 161.9C-184.2 142.8 -201.2 114.6 -207.9 86.1C-214.5 57.6 -210.8 28.8 -207 0L0 0Z' fill='%23e4d6e8'%3E%3C/path%3E%3Cpath d='M0 162C-18.8 152.8 -37.5 143.5 -56.1 135.5C-74.7 127.5 -93.1 120.7 -108 108C-122.8 95.2 -134.2 76.4 -138.6 57.4C-143 38.4 -140.5 19.2 -138 0L0 0Z' fill='%23af87ba'%3E%3C/path%3E%3Cpath d='M0 81C-9.4 76.4 -18.8 71.8 -28.1 67.8C-37.4 63.7 -46.5 60.4 -54 54C-61.4 47.6 -67.1 38.2 -69.3 28.7C-71.5 19.2 -70.3 9.6 -69 0L0 0Z' fill='%239461a3'%3E%3C/path%3E%3C/g%3E%3Cg transform='translate(0, 540)'%3E%3Cpath d='M0 -207C28.6 -212.3 57.1 -217.5 88.4 -213.4C119.7 -209.3 153.6 -195.8 171.8 -171.8C190 -147.9 192.4 -113.4 200.5 -83C208.5 -52.7 222.3 -26.3 236 0L0 0Z' fill='%23e4d6e8'%3E%3C/path%3E%3Cpath d='M0 -138C19 -141.5 38.1 -145 58.9 -142.3C79.8 -139.5 102.4 -130.5 114.6 -114.6C126.7 -98.6 128.3 -75.6 133.7 -55.4C139 -35.1 148.2 -17.6 157.3 0L0 0Z' fill='%23af87ba'%3E%3C/path%3E%3Cpath d='M0 -69C9.5 -70.8 19 -72.5 29.5 -71.1C39.9 -69.8 51.2 -65.3 57.3 -57.3C63.3 -49.3 64.1 -37.8 66.8 -27.7C69.5 -17.6 74.1 -8.8 78.7 0L0 0Z' fill='%239461a3'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-				background-repeat: no-repeat;
-				background-size: cover;
-				z-index: -1;
-			}
-			.intro-blob-1 {
-				position: absolute;
-			}
-
-			.intro-sub-heading {
-				font-size: 20px;
-				text-transform: uppercase;
-			}
-
-			.intro-heading {
-				font-size: 36px;
-				text-transform: uppercase;
-			}
-
-			.intro-content-p {
-				text-align: justify;
-				width: 80%;
-			}
-
-			.view-about-btn {
-				display: block;
-				text-decoration: none;
-				height: 40px;
-				line-height: 40px;
-				background-color: var(--accent);
-				width: 120px;
-				text-align: center;
-				border-radius: 12px;
-				color: #fff;
-				margin: 32px 0 0 20px;
-			}
-
-			.right-intro {
-				width: 33.333%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				position: relative;
-			}
-
-			.img-teacher {
-				width: 70%;
-			}
-
-			.teacher-info-wrapper {
-				width: 250px;
-				background-color: #fff;
-				position: absolute;
-				box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.16);
-				left: -20%;
-				bottom: 0;
-				padding: 0 24px;
-				border-radius: 10px;
-			}
-
-			.teacher-info-icon {
-				position: absolute;
-				left: 0;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				bottom: 0;
-				display: block;
-				border-radius: 100%;
-				background-color: var(--accent);
-				width: 36px;
-				height: 36px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				color: white;
-			}
-
-			.teacher-info-text {
-				padding: 16px;
-			}
-
-			.teacher-info-text p{
-				margin: 0;
-			}
-
-			.teacher-info-text i {
-				color: #f7c04d;
-			}
-
-			.teacher-name {
-				color: var(--accent);
-			}
-		</style>
 	</body>	
 </html>
