@@ -3,8 +3,6 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 import '../assets/css/custom.css';
-import '../owlcarousel/owl.carousel.min.css';
-import '../owlcarousel/owl.theme.default.min.css'
 
 interface Props {
 	title: string;
@@ -59,11 +57,8 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <!-- Bootstrap grid -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 <!-- OwlCarousel -->
-<script src="../owlcarousel/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="/owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="/owlcarousel/owl.theme.default.min.css">
 
-<!-- Custom scripts -->
-<script src="../assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
